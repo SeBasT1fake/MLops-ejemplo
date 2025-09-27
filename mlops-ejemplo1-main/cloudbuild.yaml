@@ -4,7 +4,7 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/sebasMLops/MLops-ejemplo']
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['beta', 'run', 'deploy', 'mlops-ejemplo1', '--image=gcr.io/sebasMLops/MLops-ejemplo', '--region=us-central1', '--platform=managed']
+  args: ['beta', 'run', 'deploy', 'MLops-ejemplo', '--image=gcr.io/sebasMLops/MLops-ejemplo', '--region=us-central1', '--platform=managed']
 
 options:
   logging: CLOUD_LOGGING_ONLY  # Para enviar logs solo a Cloud Logging
